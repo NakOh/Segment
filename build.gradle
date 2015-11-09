@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //        classpath 'com.android.tools.build:gradle:1.2.3'
+        // 기존 gradle 1.2.3으로 설정된 부분을 아래와 같이 변경합니다.
+        classpath 'com.android.tools.build:gradle-experimental:0.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
